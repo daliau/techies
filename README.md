@@ -1,4 +1,4 @@
-# Techies Section 371
+# Techies - Section 371
 ### A website to connect businesses with skilled freelancers in the technology sector. 
 
 
