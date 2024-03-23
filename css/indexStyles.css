@@ -1,0 +1,122 @@
+/* External index styles sheet */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for header */
+header {
+    background-color: #5777a8;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for logo */
+.Techieslogo {
+    display: block;
+    margin: 0 auto;
+    float: center;
+}
+
+/* Style for login button */
+.loginButton {
+    float: right;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Style for filter button */
+.filter{
+    float: left;
+}
+
+/* Style for search bar */
+.search-bar {
+    margin-top: 10px;
+    display: inline-block; /* Display search bar as inline-block */
+}
+
+/* Style for search input */
+#searchInput {
+    padding: 8px; /* Increase padding for search input */
+    border-radius: 10px; /* Rounded border for search input */
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* Style for search button */
+#searchButton {
+    padding: 8px 20px; /* Adjust padding for search button */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded border for search button */
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+
+/* Style for main section */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for profile container */
+.profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style for individual profile */
+.profile {
+    background-color: #e4e4e4;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+.profile a {     
+    text-decoration: none;
+}
+
+/* Style for profile image */
+.profile img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style for profile info */
+.profile-info {
+    text-align: center;
+    color: black;
+}
+
+
+/* Style for footer */
+footer {
+    background-color: #545454;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for footer links */
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Style for footer images */
+footer img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Style for footer paragraphs */
+footer p {
+    margin-top: 10px;
+}
