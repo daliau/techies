@@ -2,22 +2,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><!-- Set character encoding to UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--  define viewport for responsive design -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/CredentialStyles.css">
     <title>Signup Page</title>
 </head>
 <body>
-    <div>
-        <h2>Sign Up</h2>
-        <form method="post">
-            <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username" required><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br><br>
-            <input type="submit" value="Sign Up">
+    <div class="signup-container">
+        <img src="img/logo.png" alt="Techies Logo" class="Techies-logo">
+        <form action="#" method="post" class="signup-form">
+            <input type="text" name="username" placeholder="Username">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit">Sign Up</button>
         </form>
+        <p class="signup-text">Already have an account? <a href="login.html">Log in here</a></p>
     </div>
 </body>
 </html>
