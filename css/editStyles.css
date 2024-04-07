@@ -1,0 +1,78 @@
+/* Style for header */
+header {
+    background-color: #5777a8;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for logo */
+.techies-logo {
+    display: block;
+    margin: 0 auto;
+    float: center;
+}
+
+/* Style for login button */
+.login-button {
+    float: right;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.input{
+    width: calc(100% - 30px);
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto; /* Center horizontally */
+}
+
+.button {
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+
+.p {
+    margin-top: 20px;
+}
+
+.p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.p a:hover {
+    text-decoration: underline;
+}
+
+/* Style for footer */
+footer {
+    background-color: #545454;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for footer links */
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Style for footer images */
+footer img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Style for footer paragraphs */
+footer p {
+    margin-top: 10px;
+}

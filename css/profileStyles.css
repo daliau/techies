@@ -1,0 +1,63 @@
+/* Header style */
+header {
+    background-color: #5777a8;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Logo style */
+.techies-logo {
+    display: block;
+    margin: 0 auto;
+    float: center;
+}
+
+/* Login button style */
+.login-button {
+    float: right;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Headings style */
+h2 {
+    color: #5777a8;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight: 900;
+}
+
+/* Horizontal line style */
+hr {
+    margin: 20px auto;
+    width: 80%;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+/* Style for footer */
+footer {
+    background-color: #545454;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for footer links */
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Style for footer images */
+footer img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Style for footer paragraphs */
+footer p {
+    margin-top: 10px;
+}
