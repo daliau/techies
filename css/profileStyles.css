@@ -4,14 +4,14 @@
     padding: 0;
 }
 
-/* Header style */
+/* Style for header */
 header {
     background-color: #5777a8;
     text-align: center;
     padding: 20px;
 }
 
-/* Logo style */
+/* Style for logo */
 .techies-logo {
     display: block;
     margin: 0 auto;
@@ -25,7 +25,6 @@ header {
     text-decoration: none;
     margin-top: 10px;
 }
-
 /* Headings style */
 h2 {
     color: #5777a8;
@@ -34,6 +33,15 @@ h2 {
     font-weight: 900;
 }
 
+a.nodec {
+    text-decoration: none;
+    color: #545454;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
 /* Horizontal line style */
 hr {
     margin: 20px auto;
