@@ -5,6 +5,38 @@
     <meta charset="utf-8">
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="css/CredentialStyles.css">
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector('.login-form');
+            const usernameInput = document.querySelector('input[name="username"]');
+            const passwordInput = document.querySelector('input[name="password"]');
+
+            form.addEventListener('submit', function (event) {
+                let isValid = true;
+
+                // Validate username
+                if (usernameInput.value.trim() === '') {
+                    alert('Username cannot be empty');
+                    isValid = false;
+                }
+
+                // Validate password
+                if (passwordInput.value.trim() === '') {
+                    alert('Password cannot be empty');
+                    isValid = false;
+                }
+
+                if (!isValid) {
+                    event.preventDefault(); // Prevent form submission
+                } else {
+                    // Simulate form submission (replace with actual API call or server-side validation)
+                    // For demonstration purposes, alert the user with a success message
+                    alert('Login successful!');
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="login-container">
