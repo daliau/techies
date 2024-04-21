@@ -5,6 +5,49 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/CredentialStyles.css">
     <title>Signup Page</title>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector('.signup-form');
+            const usernameInput = document.querySelector('input[name="username"]');
+            const emailInput = document.querySelector('input[name="email"]');
+            const passwordInput = document.querySelector('input[name="password"]');
+            const signupButton = document.querySelector('button[type="submit"]');
+
+            form.addEventListener('submit', function (event) {
+                let isValid = true;
+
+                // Validate username
+                if (usernameInput.value.trim() === '') {
+                    alert('Username cannot be empty');
+                    isValid = false;
+                }
+
+                // Validate email
+                if (emailInput.value.trim() === '' || !isValidEmail(emailInput.value.trim())) {
+                    alert('Please enter a valid email address');
+                    isValid = false;
+                }
+
+                // Validate password
+                if (passwordInput.value.trim() === '') {
+                    alert('Password cannot be empty');
+                    isValid = false;
+                }
+
+                if (!isValid) {
+                    event.preventDefault(); // Prevent form submission
+                }
+            });
+
+            function isValidEmail(email) {
+                // Simple email validation using regular expression
+                const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                return emailRegex.test(email);
+            }
+        });
+    </script>
+ 
 </head>
 <body>
     <div class="signup-container">
