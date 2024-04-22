@@ -1,26 +1,49 @@
-<!-- MASHAEL -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="stylesheet" type="text/css" href="css/CredentialStyles.css">
     <link rel="stylesheet" type="text/css" href="css/indexStyles.css">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+    <title>Home</title>
 
-        <script>
+    <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const form = document.querySelector('.login-form');
-            const usernameInput = document.querySelector('input[name="username"]');
-            const passwordInput = document.querySelector('input[name="password"]');
+            const emailInput = document.getElementById('email'); // Selecting the email input by its ID
+            const passwordInput = document.getElementById('password'); // Selecting the password input by its ID
+            const signInButton = document.querySelector('.btn-primary'); // Selecting the "Sign in" button by its class
 
-            form.addEventListener('submit', function (event) {
+            signInButton.addEventListener('click', function () {
                 let isValid = true;
 
-                // Validate username
-                if (usernameInput.value.trim() === '') {
-                    alert('Username cannot be empty');
+                // Validate email
+                if (emailInput.value.trim() === '') {
+                    alert('Email address cannot be empty');
+                    isValid = false;
+                } else if (!isValidEmail(emailInput.value.trim())) {
+                    alert('Please enter a valid email address');
                     isValid = false;
                 }
 
@@ -30,158 +53,119 @@
                     isValid = false;
                 }
 
-                if (!isValid) {
-                    event.preventDefault(); // Prevent form submission
-                } else {
+                if (isValid) {
                     // Simulate form submission (replace with actual API call or server-side validation)
                     // For demonstration purposes, alert the user with a success message
                     alert('Login successful!');
                 }
             });
+
+            // Function to validate email format
+            function isValidEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
         });
     </script>
+
 </head>
 
-
 <body>
-    <style type="text/css">
-       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
- 
-       body {
-          font-family: 'Roboto', sans-serif;
-       }
- 
-       .banner-image {
-          background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(57, 206, 116, 0.8));
-          background-size: 100%;
-          background-position: center;
- 
-       }
- 
-       main {
-          text-align: center;
-          padding: 20px;
-       }
- 
-       /* Style for profile container */
-       .profiles {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-       }
- 
-       /* Style for individual profile */
-       .profile {
-          background-color: #e4e4e4;
-          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-          margin: 10px;
-          padding: 10px;
-          width: 200px;
-       }
- 
-       .profile a {
-          text-decoration: none;
-       }
- 
-       /* Style for profile image */
-       .profile img {
-          display: block;
-          margin: 0 auto;
-       }
- 
-       /* Style for profile info */
-       .profile-info {
-          text-align: center;
-          color: black;
-       }
- 
-       /* Style for footer */
-       footer {
-          background-color: #545454;
-          color: white;
-          text-align: center;
-          padding: 20px;
-       }
- 
-       /* Style for footer links */
-       footer a {
-          color: white;
-          text-decoration: none;
-          margin-right: 10px;
-       }
- 
-       /* Style for footer images */
-       footer img {
-          vertical-align: middle;
-          margin-right: 5px;
-       }
- 
-       /* Style for footer paragraphs */
-       footer p {
-          margin-top: 10px;
-       }
-    </style>
- 
+
     <div class="banner-image">
-       <nav class="navbar navbar-expand-lg py-3 navbar-dark">
-          <div class="container">
- 
-             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto font-weight-bold">
-                   <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
-                   <li class="nav-item"> <a class="nav-link" href="#">Services</a> </li>
-                   <li class="nav-item"> <a class="nav-link" href="#">Sign Up</a> </li>
-                   <li class="nav-item"> <a class="nav-link" href="#">Contact</a> </li>
-                </ul>
-             </div>
-          </div>
-       </nav>
-       <div class="container pb-5">
-          <div class="row py-5 align-items-center">
-             <div class="col-lg-6">
-                <h5 class="display-4 mb-4 font-weight-bold text-white">Techies</h5>
- 
-                <p class="h5 aa mb-4 pb-3 text-white-50">A website to connect businesses with skilled freelancers in
-                   the technology sector.
-                </p>
- 
-             </div>
- 
-          </div>
-       </div>
- 
+        <nav class="navbar navbar-expand-lg py-3 navbar-dark">
+            <div class="container">
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto font-weight-bold">
+                        <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Services</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Sign Up</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Contact</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container pb-5">
+            <div class="row py-5 align-items-center">
+                <div class="col-lg-6">
+                    <h5 class="display-4 mb-4 font-weight-bold text-white">Techies</h5>
+
+                    <p class="h5 aa mb-4 pb-3 text-white-50">A website to connect businesses with skilled freelancers in
+                        the technology sector.
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="container">
+
+
+                <form class="border border-light">
+                    <h3 class="display-5 mb-9 font-weight-bold text-white center">Login</h3>
+
+                    <!-- Email input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="email" id="email" class="form-control" />
+                        <label class="form-label" for="form2Example1">Email address</label>
+                    </div>
+
+                    <!-- Password input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="password" id="password" class="form-control" />
+                        <label class="form-label" for="form2Example2">Password</label>
+                    </div>
+
+                    <!-- 2 column grid layout for inline styling -->
+                    <div class="row mb-4">
+                        <div class="col d-flex justify-content-center">
+                            <!-- Checkbox -->
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                                <label class="form-check-label" for="form2Example31"> Remember me </label>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <!-- Simple link -->
+                            <a href="#!">Forgot password?</a>
+                        </div>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="button" data-mdb-button-init data-mdb-ripple-init
+                        class="btn btn-primary btn-block mb-4 white">Sign in</button>
+
+                    <!-- Register buttons -->
+                    <div class="text-center">
+                        <p>Not a member? <a href="SignUp.html">Register</a></p>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <footer align="center"> <!-- Begin footer section that hold information about the website-->
+            <h3>About Us</h3>
+            <p>The first team that designed a website for you that brigns together all the Specialists in the world in
+                one
+                place.</p>
+            <br>
+            <h3>Contact Us</h3>
+            <a href="mailto:techies@techies.com">techies@techies.com</a>
+            <br>
+            <a href="tel:+966 11 101 0010">+966 11 101 0010</a>
+            <br>
+            <h3>Follow Us</h3>
+            <a href="#" style="text-decoration: none;"><img src="img/facebook-icon.png" width="25" height="25"
+                    alt="Facebook">@techies</a>
+            <a href="#" style="text-decoration: none;"><img src="img/X-icon.png" width="25" height="25"
+                    alt="X">@techies</a>
+            <a href="#" style="text-decoration: none;"><img src="img/instagram-icon.png" width="25" height="25"
+                    alt="Instagram">@techies</a>
+            <p>&copy; 2024 Techies. All rights reserved.</p>
+        </footer>
     </div>
- </body>
+</body>
 
-
-
-<!-- login box-->
-    <div class="login-container">
-        <form action="#" method="post" class="login-form">
-            <input type="text" name="username" placeholder="Username">
-            <input type="password" name="password" placeholder="Password">
-            <button type="submit">Log In</button>
-        </form>
-        <p class="signup-text">Don't have an account? <a href="signup.html">Sign up here</a></p>
-    </div>
-
-
-    <footer align="center"> <!-- Begin footer section that hold information about the website-->
-        <h3>About Us</h3>
-        <p>The first team that designed a website for you that brigns together all the Specialists in the world in one
-            place.</p>
-        <br>
-        <h3>Contact Us</h3>
-        <a href="mailto:techies@techies.com">techies@techies.com</a>
-        <br>
-        <a href="tel:+966 11 101 0010">+966 11 101 0010</a>
-        <br>
-        <h3>Follow Us</h3>
-        <a href="#" style="text-decoration: none;"><img src="img/facebook-icon.png" width="25" height="25"
-                alt="Facebook">@techies</a>
-        <a href="#" style="text-decoration: none;"><img src="img/X-icon.png" width="25" height="25" alt="X">@techies</a>
-        <a href="#" style="text-decoration: none;"><img src="img/instagram-icon.png" width="25" height="25"
-                alt="Instagram">@techies</a>
-        <p>&copy; 2024 Techies. All rights reserved.</p>
-    </footer>
 </html>
