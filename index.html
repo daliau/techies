@@ -1,222 +1,334 @@
-<!-- Sarab Almuqati-->
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
+   <!-- Required meta tags -->
    <meta charset="utf-8">
-   <title>Techies</title>
-   <link rel="stylesheet" type="text/css" href="css/indexStyles.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+   <title>Home</title>
+
 </head>
 
 <body>
-   <header> <!-- header element creates a header for the page -->
-      <p class ="Techieslogo"><img src="img/logo.png" height="30%" width="30%" alt="Techies logo" /></p>
-      <div class="loginButton"><a href="LogIn.html">Login <img src="img/login-icon.png" width="30" height="30"
-               alt="Login icon" /> </a></div>
-      <p class="filter"><img src="img/filter-icon.png" width="30" height="30" alt="Filter icon" /></p>
-      <!-- a divider for the search bar to adjust it later-->
-      <div class="search-bar">
-         <input type="text" id="searchInput" placeholder="Lets search!">
-         <button id="searchButton">Search</button>
+   <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+      body {
+         font-family: 'Roboto', sans-serif;
+      }
+
+      .banner-image {
+         background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(57, 206, 116, 0.8));
+         background-size: 100%;
+         background-position: center;
+
+      }
+
+      main {
+         text-align: center;
+         padding: 20px;
+      }
+
+      /* Style for profile container */
+      .profiles {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+
+      /* Style for individual profile */
+      .profile {
+         background-color: #e4e4e4;
+         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+         margin: 10px;
+         padding: 10px;
+         width: 200px;
+      }
+
+      .profile a {
+         text-decoration: none;
+      }
+
+      /* Style for profile image */
+      .profile img {
+         display: block;
+         margin: 0 auto;
+      }
+
+      /* Style for profile info */
+      .profile-info {
+         text-align: center;
+         color: black;
+      }
+
+      /* Style for footer */
+      footer {
+         background-color: #545454;
+         color: white;
+         text-align: center;
+         padding: 20px;
+      }
+
+      /* Style for footer links */
+      footer a {
+         color: white;
+         text-decoration: none;
+         margin-right: 10px;
+      }
+
+      /* Style for footer images */
+      footer img {
+         vertical-align: middle;
+         margin-right: 5px;
+      }
+
+      /* Style for footer paragraphs */
+      footer p {
+         margin-top: 10px;
+      }
+   </style>
+
+   <div class="banner-image">
+      <nav class="navbar navbar-expand-lg py-3 navbar-dark">
+         <div class="container">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto font-weight-bold">
+                  <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
+                  <li class="nav-item"> <a class="nav-link" href="#">Services</a> </li>
+                  <li class="nav-item"> <a class="nav-link" href="#">Sign Up</a> </li>
+                  <li class="nav-item"> <a class="nav-link" href="#">Contact</a> </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="container pb-5">
+         <div class="row py-5 align-items-center">
+            <div class="col-lg-6">
+               <h5 class="display-4 mb-4 font-weight-bold text-white">Techies</h5>
+
+               <p class="h5 aa mb-4 pb-3 text-white-50">A website to connect businesses with skilled freelancers in
+                  the technology sector.
+               </p>
+
+            </div>
+
+         </div>
+         <div class="input-group">
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+               aria-describedby="search-addon" />
+            <button type="button" class="btn btn-outline-secondary" data-mdb-ripple-init>search</button>
+         </div>
       </div>
-   </header>
 
-   <main align="center"> <!-- Begin main section -->
-      <!-- divider for displying all profiles-->
-      <div class="profiles">
-         <!-- divider for a single profile -->
-         <div class="profile">
-            <a href="profile.html">
-               <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
-               <!-- inner divider for the profile information-->
-               <div class="profile-info">
-                  <h3>Dalia</h3>
-                  <p>Software Engineer</p>
-               </div>
-            </a>
-         </div>
-         <!-- Repeating this structure for more profiles.. -->
-         <div class="profile">
-            <a href="profile.html">
-               <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
-               <div class="profile-info">
-                  <h3>Name</h3>
-                  <p>Major</p>
-               </div>
-            </a>
-         </div>
-
-         <div class="profile">
-            <a href="profile.html">
-               <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
-               <div class="profile-info">
-                  <h3>Name</h3>
-                  <p>Major</p>
-               </div>
-            </a>
-         </div>
-
-         <div class="profile">
-            <a href="profile.html">
-               <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
-               <div class="profile-info">
-                  <h3>Name</h3>
-                  <p>Major</p>
-               </div>
-            </a>
-         </div>
-
-         <div class="profile">
-            <a href="profile.html">
-               <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
-               <div class="profile-info">
-                  <h3>Name</h3>
-                  <p>Major</p>
-               </div>
-            </a>
-         </div>
-
-         <div class="profile">
-            <a href="profile.html">
-               <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
-               <div class="profile-info">
-                  <h3>Name</h3>
-                  <p>Major</p>
-               </div>
-            </a>
-         </div>
-
-         <div class="profile">
-            <a href="profile.html">
-               <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
-               <div class="profile-info">
-                  <h3>Name</h3>
-                  <p>Major</p>
-               </div>
-            </a>
-         </div>
-
-         <div class="profile">
-            <a href="profile.html">
-               <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
-               <div class="profile-info">
-                  <h3>Name</h3>
-                  <p>Major</p>
-               </div>
-            </a>
-         </div>
-
-         <div class="profile">
-            <a href="profile.html">
-               <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
-               <div class="profile-info">
-                  <h3>Name</h3>
-                  <p>Major</p>
-               </div>
-            </a>
-         </div>
-
-         <div class="profile">
-            <a href="profile.html">
-               <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
-               <div class="profile-info">
-                  <h3>Name</h3>
-                  <p>Major</p>
-               </div>
-            </a>
-         </div>
-
-         <div class="profile">
-            <a href="profile.html">
-               <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
-               <div class="profile-info">
-                  <h3>Name</h3>
-                  <p>Major</p>
-               </div>
-            </a>
-         </div>
-
-         <div class="profile">
-            <a href="profile.html">
-               <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
-               <div class="profile-info">
-                  <h3>Name</h3>
-                  <p>Major</p>
-               </div>
-            </a>
-         </div>
-
-         <div class="profile">
-            <a href="profile.html">
-               <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
-               <div class="profile-info">
-                  <h3>Name</h3>
-                  <p>Major</p>
-               </div>
-            </a>
-         </div>
-
-         <div class="profile">
-            <a href="profile.html">
-               <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
-               <div class="profile-info">
-                  <h3>Name</h3>
-                  <p>Major</p>
-               </div>
-            </a>
-         </div>
-
-         <div class="profile">
-            <a href="profile.html">
-               <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
-               <div class="profile-info">
-                  <h3>Name</h3>
-                  <p>Major</p>
-               </div>
-            </a>
-         </div>
-
-         <div class="profile">
-            <a href="profile.html">
-               <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
-               <div class="profile-info">
-                  <h3>Name</h3>
-                  <p>Major</p>
-               </div>
-            </a>
-         </div>
-
-         <div class="profile">
-            <a href="profile.html">
-               <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
-               <div class="profile-info">
-                  <h3>Name</h3>
-                  <p>Major</p>
-               </div>
-            </a>
-         </div>
-
-      </div>
-   </main>
-
-   <footer align="center"> <!-- Begin footer section that hold information about the website-->
-      <h3>About Us</h3>
-      <p>The first team that designed a website for you that brigns together all the Specialists in the world in one
-          place.</p>
-      <br>
-      <h3>Contact Us</h3>
-      <a href="mailto:techies@techies.com">techies@techies.com</a>
-      <br>
-      <a href="tel:+966 11 101 0010">+966 11 101 0010</a>
-      <br>
-      <h3>Follow Us</h3>
-      <a href="#" style="text-decoration: none;"><img src="img/facebook-icon.png" width="25" height="25"
-              alt="Facebook">@techies</a>
-      <a href="#" style="text-decoration: none;"><img src="img/X-icon.png" width="25" height="25" alt="X">@techies</a>
-      <a href="#" style="text-decoration: none;"><img src="img/instagram-icon.png" width="25" height="25"
-              alt="Instagram">@techies</a>
-      <p>&copy; 2024 Techies. All rights reserved.</p>
-  </footer>
+   </div>
 </body>
+
+
+
+
+<main align="center"> <!-- Begin main section -->
+   <!-- divider for displying all profiles-->
+   <div class="profiles">
+      <!-- divider for a single profile -->
+      <div class="profile">
+         <a href="profile.html">
+            <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
+            <!-- inner divider for the profile information-->
+            <div class="profile-info">
+               <h3>Dalia</h3>
+               <p>Software Engineer</p>
+            </div>
+         </a>
+      </div>
+      <!-- Repeating this structure for more profiles.. -->
+      <div class="profile">
+         <a href="profile.html">
+            <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
+            <div class="profile-info">
+               <h3>Name</h3>
+               <p>Major</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="profile">
+         <a href="profile.html">
+            <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
+            <div class="profile-info">
+               <h3>Name</h3>
+               <p>Major</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="profile">
+         <a href="profile.html">
+            <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
+            <div class="profile-info">
+               <h3>Name</h3>
+               <p>Major</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="profile">
+         <a href="profile.html">
+            <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
+            <div class="profile-info">
+               <h3>Name</h3>
+               <p>Major</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="profile">
+         <a href="profile.html">
+            <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
+            <div class="profile-info">
+               <h3>Name</h3>
+               <p>Major</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="profile">
+         <a href="profile.html">
+            <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
+            <div class="profile-info">
+               <h3>Name</h3>
+               <p>Major</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="profile">
+         <a href="profile.html">
+            <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
+            <div class="profile-info">
+               <h3>Name</h3>
+               <p>Major</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="profile">
+         <a href="profile.html">
+            <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
+            <div class="profile-info">
+               <h3>Name</h3>
+               <p>Major</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="profile">
+         <a href="profile.html">
+            <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
+            <div class="profile-info">
+               <h3>Name</h3>
+               <p>Major</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="profile">
+         <a href="profile.html">
+            <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
+            <div class="profile-info">
+               <h3>Name</h3>
+               <p>Major</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="profile">
+         <a href="profile.html">
+            <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
+            <div class="profile-info">
+               <h3>Name</h3>
+               <p>Major</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="profile">
+         <a href="profile.html">
+            <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
+            <div class="profile-info">
+               <h3>Name</h3>
+               <p>Major</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="profile">
+         <a href="profile.html">
+            <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
+            <div class="profile-info">
+               <h3>Name</h3>
+               <p>Major</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="profile">
+         <a href="profile.html">
+            <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
+            <div class="profile-info">
+               <h3>Name</h3>
+               <p>Major</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="profile">
+         <a href="profile.html">
+            <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
+            <div class="profile-info">
+               <h3>Name</h3>
+               <p>Major</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="profile">
+         <a href="profile.html">
+            <img src="img/profilePic.png" width="100" height="100" alt="Profile Picture">
+            <div class="profile-info">
+               <h3>Name</h3>
+               <p>Major</p>
+            </div>
+         </a>
+
+      </div>
+
+   </div>
+
+</main>
+<footer align="center"> <!-- Begin footer section that hold information about the website-->
+   <h3>About Us</h3>
+   <p>The first team that designed a website for you that brigns together all the Specialists in the world in one
+      place.</p>
+   <br>
+   <h3>Contact Us</h3>
+   <a href="mailto:techies@techies.com">techies@techies.com</a>
+   <br>
+   <a href="tel:+966 11 101 0010">+966 11 101 0010</a>
+   <br>
+   <h3>Follow Us</h3>
+   <a href="#" style="text-decoration: none;"><img src="img/facebook-icon.png" width="25" height="25"
+         alt="Facebook">@techies</a>
+   <a href="#" style="text-decoration: none;"><img src="img/X-icon.png" width="25" height="25" alt="X">@techies</a>
+   <a href="#" style="text-decoration: none;"><img src="img/instagram-icon.png" width="25" height="25"
+         alt="Instagram">@techies</a>
+   <p>&copy; 2024 Techies. All rights reserved.</p>
+</footer>
+
+
 
 </html>
