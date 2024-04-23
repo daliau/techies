@@ -37,10 +37,11 @@ section.need {
   margin: 10px;
 }
 
-.profile img {
+
+#profile-image {
+  border-radius: 50%;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -50,6 +51,7 @@ section.need {
   margin: 5px;
 }
 
+/* Styles for modal */
 .modal {
   display: none;
   position: fixed;
@@ -58,7 +60,7 @@ section.need {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   overflow: auto;
 }
 
@@ -66,7 +68,8 @@ section.need {
   background-color: #fefefe;
   margin: 20% auto;
   padding: 20px;
-  border: 1px solid #888;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 80%;
 }
 
@@ -84,14 +87,24 @@ section.need {
   cursor: pointer;
 }
 
+/* Styles for social media icons */
+.social-media img{
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+
 
 #edit-btn {
-  text-align: right;
+  position: relative;
+  right: -525px;
+  top: -390px;
   background-color: #e4e4e4;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   margin: 10px;
   border: #e4e4e4;
 }
+
 
 section.first a {
   text-decoration: none;
