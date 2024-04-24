@@ -66,8 +66,11 @@
   <!-- Update the edit-modal content to include input fields for social media links and profile image -->
   <div id="edit-modal" class="modal">
     <div class="modal-content">
-      <span class="close">&times;</span>
+      <span class="close" align ="right">&times;</span>
       <form id="edit-form">
+        <!-- File input for profile image -->
+        <label for="edit-profile-image">Profile Image:</label>
+        <input type="file" id="edit-profile-image" name="edit-profile-image"><br>
         <label for="edit-name">Name:</label>
         <input type="text" id="edit-name" name="edit-name" required><br>
         <label for="edit-major">Major:</label>
@@ -81,10 +84,7 @@
         <input type="url" id="edit-twitter" name="edit-twitter" required><br>
         <label for="edit-linkedin">LinkedIn:</label>
         <input type="url" id="edit-linkedin" name="edit-linkedin" required><br>
-        <!-- File input for profile image -->
-        <label for="edit-profile-image">Profile Image:</label>
-        <input type="file" id="edit-profile-image" name="edit-profile-image"><br>
-        <input type="submit" value="Save">
+        <input type="submit" id="save" value="Save">
       </form>
     </div>
   </div>

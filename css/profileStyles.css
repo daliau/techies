@@ -6,7 +6,7 @@ body {
 
 
 .banner-image {
-  background: linear-gradient(rgba(41, 8, 75, 0.708),rgba(29, 38, 113, 0.8), rgba(40, 92, 137, 0.8));
+  background: linear-gradient(rgba(41, 8, 75, 0.708), rgba(29, 38, 113, 0.8), rgba(40, 92, 137, 0.8));
   background-size: 100%;
   background-position: center;
 }
@@ -30,12 +30,28 @@ section.need {
 }
 
 .profile {
+  position: relative;
   text-align: center;
   margin-bottom: 20px;
   background-color: #e4e4e4;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   margin: 10px;
 }
+
+#edit-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e4e4e4;
+  border: none;
+  cursor: pointer;
+}
+
+#edit-btn img {
+  height: 25px;
+  width: 25px;
+}
+
 
 #profile-image {
   border-radius: 50%;
@@ -65,12 +81,42 @@ section.need {
 
 .modal-content {
   background-color: #fefefe;
-  margin: 20% auto;
+  margin: auto;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 80%;
+  width: 50%;
+  /* Adjust width as needed */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+.modal-content label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.modal-content input[type="submit"] {
+  width: auto;
+  padding: 8px 20px;
+  margin-top: 10px;
+}
+
+#save {
+  background-color: #e4e4e4;
+  border: #e4e4e4;
+  border-radius: 20%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 
 .close {
   color: #aaa;
@@ -87,19 +133,10 @@ section.need {
 }
 
 /* Styles for social media icons */
-.social-media img{
+.social-media img {
   width: 30px;
   height: 30px;
   margin: 5px;
-}
-
-#edit-btn {
-  position: relative;
-  right: -525px;
-  top: -390px;
-  background-color: #e4e4e4;
-  margin: 10px;
-  border: #e4e4e4;
 }
 
 section.first a {
