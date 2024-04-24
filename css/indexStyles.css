@@ -7,11 +7,13 @@ body {
 }
 
 .banner-image {
-   background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(57, 206, 116, 0.8));
-   background-size: 100%;
-   background-position: center;
+   background: linear-gradient(rgba(41, 8, 75, 0.708), rgba(29, 38, 113, 0.8), rgba(40, 92, 137, 0.8)), url('../img/hero.png');
+   background-size: auto 100%, cover;
+   background-position: right center, center;
+   background-repeat: no-repeat;
+   height: 820px;
+ }
 
-}
 
 main {
    text-align: center;

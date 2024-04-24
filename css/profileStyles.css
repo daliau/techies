@@ -4,15 +4,15 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-section {
-  font-family: Arial, sans-serif;
-}
 
 .banner-image {
-  background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(57, 206, 116, 0.8));
+  background: linear-gradient(rgba(41, 8, 75, 0.708),rgba(29, 38, 113, 0.8), rgba(40, 92, 137, 0.8));
   background-size: 100%;
   background-position: center;
+}
 
+.hidden {
+  display: none;
 }
 
 section.first {
@@ -36,7 +36,6 @@ section.need {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   margin: 10px;
 }
-
 
 #profile-image {
   border-radius: 50%;
@@ -94,8 +93,6 @@ section.need {
   margin: 5px;
 }
 
-
-
 #edit-btn {
   position: relative;
   right: -525px;
@@ -105,13 +102,14 @@ section.need {
   border: #e4e4e4;
 }
 
-
 section.first a {
   text-decoration: none;
   color: black;
 }
 
-
+h5 {
+  color: rgba(40, 92, 137, 0.8);
+}
 
 /* Style for footer */
 footer {

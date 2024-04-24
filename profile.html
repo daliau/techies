@@ -1,5 +1,3 @@
-<!-- Dalia -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,13 +11,11 @@
   <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
 </head>
 
-<!-- headeeeeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr-->
-
+<!-- header-->
 <body>
   <div class="banner-image">
     <nav class="navbar navbar-expand-lg py-3 navbar-dark">
       <div class="container">
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto font-weight-bold">
             <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
@@ -35,20 +31,20 @@
       <div class="row py-5 align-items-center">
         <div class="col-lg-6">
           <h5 class="display-4 mb-4 font-weight-bold text-white">Techies</h5>
-
           <p class="h5 aa mb-4 pb-3 text-white-50">A website to connect businesses with skilled freelancers in
             the technology sector.
           </p>
-
         </div>
-
       </div>
     </div>
-
   </div>
+  <div class="hero-section">
+    <div class="banner-image">
+      <a href="#next-section"><div class="arrow"></div></a>
+    </div>
+  </div>  
 </body>
-<!-- end headeeeerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr-->
-
+<!-- end header-->
 
 <section class="first">
   <div class="container">
@@ -59,12 +55,11 @@
       <p id="email">Email</p>
       <p id="phone">Phone Number</p>
       <div class="social-media">
-        <a id="social-link-1" href="#" target="_blank"><img src="img/email.png" alt="Email"></a>
-        <a id="social-link-2" href="#" target="_blank"><img src="img/github.png" alt="Github"></a>
-        <a id="social-link-3" href="#" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
+        <a id="social-link-1" href="#" target ="_blank"><img src="img/github.png" alt="Github"></a>
+        <a id="social-link-2" href="#" target ="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
         <!-- Add more social media links as needed -->
       </div>
-      <button id="edit-btn"><img src="img/edit.png" height ="25px" width="25px" alt="Edit"></button>
+      <button id="edit-btn"><img src="img/edit.png" height="25px" width="25px" alt="Edit"></button>
     </div>
   </div>
 
@@ -94,40 +89,53 @@
     </div>
   </div>
 
-
   <script src="js/profileJS.js"></script>
 </section>
 
-
-<!-- another profile neeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeds -->
-
-<!-- Horizontal line to separate sections -->
-<hr>
-
 <!-- Sections of eadings with respective icons -->
-<!-- List of user technical skills -->
 <section class="need">
-  <p><img src="img/profile.png" width="30" height="30" alt="Bio"><strong>&nbsp;Bio</strong>
-    <a href="edit.html"><img src="img/edit.png" width="15" height="15" alt="Edit"></a>
-  </p><br>
-  <p><img src="img/skills.png" width="30" height="30" alt="Skills"><strong>&nbsp;Skills</strong>
-    <a href="edit.html"><img src="img/edit.png" width="15" height="15" alt="Edit"></a>
-  </p><br>
+  <hr>
+  <h5><img src="img/profile.png" width="30" height="30" alt="Bio"><strong>&nbsp;Bio</strong>
+    <a href="#" class="add-button"><img src="img/add.png" width="15" height="15" alt="Add"></a>
+  </h5>
+  <div class="text-field hidden">
+    <textarea></textarea>
+    <button class="save-button">Save</button>
+  </div>
+  <hr>
+  <!-- List of user technical skills -->
+  <h5><img src="img/skills.png" width="30" height="30" alt="Skills"><strong>&nbsp;Skills</strong>
+    <a href="#" class="add-button"><img src="img/add.png" width="15" height="15" alt="Add"></a>
+  </h5>
+  <div class="text-field hidden">
+    <textarea></textarea>
+    <button class="save-button">Save</button>
+  </div>
   <hr>
   <!-- List of user previous projects -->
-  <p><img src="img/projects.png" width="30" height="30" alt="Projects"><strong>&nbsp;Projects</strong>
-    <a href="edit.html"><img src="img/edit.png" width="15" height="15" alt="Edit"></a>
-  </p><br>
+  <h5><img src="img/projects.png" width="30" height="30" alt="Projects"><strong>&nbsp;Projects</strong>
+    <a href="#" class="add-button"><img src="img/add.png" width="15" height="15" alt="Add"></a>
+  </h5>
+  <div class="text-field hidden">
+    <textarea></textarea>
+    <button class="save-button">Save</button>
+  </div>
   <hr>
   <!-- List of user certificates -->
-  <p><img src="img/certificate.png" width="30" height="30" alt="Certificates"><strong>&nbsp;Certificates</strong>
-    <a href="edit.html"><img src="img/edit.png" width="15" height="15" alt="Edit"></a>
-  </p><br>
+  <h5><img src="img/certificate.png" width="30" height="30" alt="Certificates"><strong>&nbsp;Certificates</strong>
+    <a href="#" class="add-button"><img src="img/add.png" width="15" height="15" alt="Add"></a>
+  </h5>
+  <div class="text-field hidden">
+    <textarea></textarea>
+    <button class="save-button">Save</button>
+  </div>
+  <hr>
 </section>
-<!-- end profile neeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeds -->
 
+</body>
 
-<footer id="footer" align="center"> <!-- Begin footer section that hold information about the website-->
+<!-- Begin footer section that hold information about the website-->
+<footer id="footer" align="center">
   <h3>About Us</h3>
   <p>The first team that designed a website for you that brigns together all the Specialists in the world in one
     place.</p>
@@ -145,5 +153,6 @@
       alt="Instagram">@techies</a>
   <p>&copy; 2024 Techies. All rights reserved.</p>
 </footer>
+<!-- End of footer -->
 
 </html>
