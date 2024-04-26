@@ -3,9 +3,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="css/CredentialStyles.css">
     <link rel="stylesheet" type="text/css" href="css/indexStyles.css">
 
     <!-- Bootstrap CSS -->
@@ -14,63 +12,6 @@
 
     <title>SignUp</title>
 
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const usernameInput = document.getElementById('Username'); // Selecting the username input by its ID
-            const emailInput = document.getElementById('email'); // Selecting the email input by its ID
-            const passwordInput = document.getElementById('password'); // Selecting the password input by its ID
-            const passwordConfirmationInput = document.getElementById('passwordconfirmation'); // Selecting the password confirmation input by its ID
-            const signUpButton = document.querySelector('.btn-primary'); // Selecting the submit button by its class
-    
-            signUpButton.addEventListener('click', function () {
-                let isValid = true;
-    
-                // Validate username
-                if (usernameInput.value.trim() === '') {
-                    alert('Username cannot be empty');
-                    isValid = false;
-                }
-    
-                // Validate email
-                if (emailInput.value.trim() === '') {
-                    alert('Email address cannot be empty');
-                    isValid = false;
-                } else if (!isValidEmail(emailInput.value.trim())) {
-                    alert('Please enter a valid email address');
-                    isValid = false;
-                }
-    
-                // Validate password
-                if (passwordInput.value.trim() === '') {
-                    alert('Password cannot be empty');
-                    isValid = false;
-                }
-    
-                // Validate password confirmation
-                if (passwordConfirmationInput.value.trim() === '') {
-                    alert('Password confirmation cannot be empty');
-                    isValid = false;
-                } else if (passwordInput.value !== passwordConfirmationInput.value) {
-                    alert('Password does not match');
-                    isValid = false;
-                }
-    
-                if (isValid) {
-                    // Simulate form submission (replace with actual API call or server-side validation)
-                    // For demonstration purposes, alert the user with a success message
-                    alert('SignUp successful!');
-                }
-            });
-    
-            // Function to validate email format
-            function isValidEmail(email) {
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                return emailRegex.test(email);
-            }
-        });
-    </script>
-    
 </head>
 
 <body>
@@ -84,79 +25,62 @@
                         <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="#footer">About</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="#footer">Services</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="LogIn.html">LogIn</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="LogIn.html">Login</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="#footer">Contact</a> </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="container pb-5">
-            <div class="row py-5 align-items-center">
-                <div class="col-lg-6">
-                    <h5 class="display-4 mb-4 font-weight-bold text-white">Techies</h5>
+  
 
-                    <p class="h5 aa mb-4 pb-3 text-white-50">A website to connect businesses with skilled freelancers in
-                        the technology sector.
-                    </p>
-
+        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+          <div class="container h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="card" style="border-radius: 15px;">
+                  <div class="card-body p-5">
+                    <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+      
+                    <form>
+      
+                      <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="text" id="Username" class="form-control form-control-lg" />
+                        <label class="form-label" for="Username">Your Name</label>
+                      </div>
+      
+                      <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="email" id="email" class="form-control form-control-lg" />
+                        <label class="form-label" for="email">Your Email</label>
+                      </div>
+      
+                      <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="password" id="password" class="form-control form-control-lg" />
+                        <label class="form-label" for="password">Password</label>
+                      </div>
+      
+                      <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="password" id="passwordconfirmation" class="form-control form-control-lg" />
+                        <label class="form-label" for="passwordconfirmation">Repeat your password</label>
+                      </div>
+      
+      
+                      <div class="d-flex justify-content-center">
+                        <button type="button" id="submit"
+                          data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-dark btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                      </div>
+      
+                      <p class="text-center text-muted mt-5 mb-0">Have already an account?<a href="LogIn.html" class="fw-bold text-body"><u>Login here</u></a></p>
+      
+                    </form>
+      
+                  </div>
                 </div>
-
+              </div>
             </div>
-            <div class="container">
-
-
-                <form class="border border-light">
-                    <h3 class="display-5 mb-9 font-weight-bold text-white center">SignUp</h3>
-
-                    <!-- Username input -->
-                    <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="email" id="Username" class="form-control" />
-                        <label class="form-label" for="form2Example1"> Username</label>
-                    </div>
-                    <!-- Email input -->
-                    <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="email" id="email" class="form-control" />
-                        <label class="form-label" for="form2Example1">Email address</label>
-                    </div>
-
-                    <!-- Password input -->
-                    <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="password" id="password" class="form-control" />
-                        <label class="form-label" for="form2Example2">Password</label>
-                    </div>
-
-                    <!-- Password Confirmation input -->
-                    <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="password" id="passwordconfirmation" class="form-control" />
-                        <label class="form-label" for="form2Example2">Password Confirmation</label>
-                    </div>
-
-                    <!-- 2 column grid layout for inline styling -->
-                    <div class="row mb-4">
-                        <div class="col d-flex justify-content-center">
-                            <!-- Checkbox -->
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
-                                <label class="form-check-label" for="form2Example31"> Remember me </label>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                    <!-- Submit button -->
-                    <button type="button" data-mdb-button-init data-mdb-ripple-init
-                        class="btn btn-primary btn-block mb-4 white">Sign up</button>
-
-                    <!-- Register buttons -->
-                    <div class="text-center">
-                        <p>Already a member? <a href="LogIn.html">Login</a></p>
-
-                    </div>
-                </form>
-            </div>
-
+          </div>
         </div>
+
+
         <footer id ="footer" align="center"> <!-- Begin footer section that hold information about the website-->
             <h3>About Us</h3>
             <p>The first team that designed a website for you that brigns together all the Specialists in the world in
@@ -178,6 +102,7 @@
             <p>&copy; 2024 Techies. All rights reserved.</p>
         </footer>
     </div>
+    <script src="js/SignUp.js"></script>
 </body>
 
 </html>
