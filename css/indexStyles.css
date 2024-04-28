@@ -12,7 +12,12 @@ body {
    background-position: right center, center;
    background-repeat: no-repeat;
    height: 820px;
- }
+}
+
+.input-group button{
+   background-color: #e4e4e4;
+   color: black;
+}
 
 
 main {
@@ -34,10 +39,11 @@ main {
    margin: 10px;
    padding: 10px;
    width: 200px;
-   border-radius: 10px; /* Added border radius for rounded corners */
+   border-radius: 10px;
+   /* Added border radius for rounded corners */
 }
 
-.profile a {
+div.profile a {
    text-decoration: none;
 }
 
@@ -45,12 +51,34 @@ main {
 .profile img {
    display: block;
    margin: 0 auto;
+   transition: transform 0.2s;
+   /* Added smooth transition for hover effect */
 }
+
+.profile img:hover {
+   transform: scale(1.1);
+   /* Increased size on hover */
+}
+
+.profile h4:hover {
+   transform: scale(1.1);
+   /* Increased size on hover */
+}
+
+.profile p:hover {
+   transform: scale(1.1);
+   /* Increased size on hover */
+}
+
 
 /* Style for profile info */
 .profile-info {
    text-align: center;
    color: black;
+}
+
+.profile-info h4 {
+   margin-top: 25px;
 }
 
 /* Style for footer */
