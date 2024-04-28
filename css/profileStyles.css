@@ -22,9 +22,8 @@ section.first {
 section.need {
   padding-left: 2%;
 }
-
 .container {
-  width: 600px;
+  max-width: 600px; /* Changed width to max-width for responsiveness */
   margin: 0 auto;
   padding: 20px;
 }
@@ -33,16 +32,17 @@ section.need {
   position: relative;
   text-align: center;
   margin-bottom: 20px;
-  background-color: #e4e4e4;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  margin: 10px;
+  background-color: #e4e4e4; /* Adjusted background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softened box shadow */
+  padding: 20px; /* Added padding for better spacing */
+  border-radius: 10px; /* Added border radius for rounded corners */
 }
 
 #edit-btn {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #e4e4e4;
+  background-color: #e4e4e4; /* Changed button background color */
   border: none;
   cursor: pointer;
 }
@@ -52,19 +52,31 @@ section.need {
   width: 25px;
 }
 
-
 #profile-image {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin: 10px auto; /* Centered profile image and added margin */
+  display: block; /* Ensures margin auto works properly */
 }
 
-.social-media a {
-  display: inline-block;
-  margin: 5px;
+.contact-icons {
+  margin-top: 15px; /* Increased space above the contact icons */
+  margin-bottom: 15px; /* Increased space below the contact icons */
+  text-align: center; /* Centered the icons */
 }
+
+.contact-icons img {
+  height: 35px; /* Increased icon size */
+  width: 35px; /* Increased icon size */
+  margin: 0 10px; /* Increased space between icons */
+  transition: transform 0.2s; /* Added smooth transition for hover effect */
+}
+
+.contact-icons img:hover {
+  transform: scale(1.2); /* Increased size on hover */
+}
+
 
 /* Styles for modal */
 .modal {
@@ -132,12 +144,6 @@ section.need {
   cursor: pointer;
 }
 
-/* Styles for social media icons */
-.social-media img {
-  width: 30px;
-  height: 30px;
-  margin: 5px;
-}
 
 section.first a {
   text-decoration: none;

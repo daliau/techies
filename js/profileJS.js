@@ -1,25 +1,24 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const profileImage = document.getElementById('profile-image');
-  const name = document.getElementById('name');
-  const major = document.getElementById('major');
-  const email = document.getElementById('email');
-  const phone = document.getElementById('phone');
   const editButton = document.getElementById('edit-btn');
   const editModal = document.getElementById('edit-modal');
   const editForm = document.getElementById('edit-form');
+  const profileImage = document.getElementById('profile-image');
+  const name = document.getElementById('name');
+  const major = document.getElementById('major');
+  const emailIcon = document.getElementById('email-icon');
+  const phoneIcon = document.getElementById('phone-icon');
+  const githubIcon = document.getElementById('github-icon');
+  const linkedinIcon = document.getElementById('linkedin-icon');
 
-  // Fetch user profile data from MongoDB
-  // Replace this with your actual code to fetch data
+  // Mock user profile data (replace with your actual data)
   let userProfileData = {
     profileImageURL: 'img/profilePic.png',
     name: 'Dalia',
     major: 'Computer Science',
     email: 'alasmaridalia@gmail.com',
     phone: '+966 59 2070 816',
-    socialMedia: [
-      { name: 'Twitter', link: 'https://twitter.com/' },
-      { name: 'LinkedIn', link: 'https://linkedin.com/' }
-    ]
+    github: 'https://github.com/',
+    linkedin: 'https://linkedin.com/'
   };
 
   // Function to populate form fields with profile data
@@ -28,16 +27,29 @@ document.addEventListener('DOMContentLoaded', function () {
     editForm['edit-major'].value = userProfileData.major;
     editForm['edit-email'].value = userProfileData.email;
     editForm['edit-phone'].value = userProfileData.phone;
-    editForm['edit-twitter'].value = userProfileData.socialMedia[0].link;
-    editForm['edit-linkedin'].value = userProfileData.socialMedia[1].link;
+    editForm['edit-github'].value = userProfileData.github;
+    editForm['edit-linkedin'].value = userProfileData.linkedin;
   }
 
-  // Populate profile fields with retrieved data
-  profileImage.src = userProfileData.profileImageURL;
-  name.textContent = userProfileData.name;
-  major.textContent = userProfileData.major;
-  email.textContent = userProfileData.email;
-  phone.textContent = userProfileData.phone;
+  // Function to update profile data
+  function updateProfileData() {
+    name.textContent = userProfileData.name;
+    major.textContent = userProfileData.major;
+    profileImage.src = userProfileData.profileImageURL;
+  }
+
+  // Function to save edited profile information
+  function saveProfileData() {
+    userProfileData.name = editForm['edit-name'].value;
+    userProfileData.major = editForm['edit-major'].value;
+    userProfileData.email = editForm['edit-email'].value;
+    userProfileData.phone = editForm['edit-phone'].value;
+    userProfileData.github = editForm['edit-github'].value;
+    userProfileData.linkedin = editForm['edit-linkedin'].value;
+
+    // Update profile data display
+    updateProfileData();
+  }
 
   // Show edit modal when Edit Profile button is clicked
   editButton.addEventListener('click', function () {
@@ -50,54 +62,33 @@ document.addEventListener('DOMContentLoaded', function () {
     editModal.style.display = 'none';
   });
 
-  // Save edited profile information
+  // Save edited profile information when form is submitted
   editForm.addEventListener('submit', function (event) {
     event.preventDefault();
-    userProfileData = {
-      name: editForm['edit-name'].value,
-      major: editForm['edit-major'].value,
-      email: editForm['edit-email'].value,
-      phone: editForm['edit-phone'].value,
-      socialMedia: [
-        { name: 'Twitter', link: editForm['edit-twitter'].value },
-        { name: 'LinkedIn', link: editForm['edit-linkedin'].value }
-      ],
-      profileImageURL: profileImage.src // Update profile image URL
-    };
-    // Add code to update profile data in MongoDB
-    // Display updated profile data
-    name.textContent = userProfileData.name;
-    major.textContent = userProfileData.major;
-    email.textContent = userProfileData.email;
-    phone.textContent = userProfileData.phone;
-    // Update social media links
-    userProfileData.socialMedia.forEach((social, index) => {
-      const socialLink = document.getElementById(`social-link-${index + 1}`);
-      socialLink.href = social.link;
-    });
-    // Hide edit modal
-    editModal.style.display = 'none';
+    saveProfileData();
+    editModal.style.display = 'none'; // Hide modal after saving
   });
 
-  // Update profile image when a new image is selected
-  editForm['edit-profile-image'].addEventListener('change', function (event) {
-    const file = event.target.files[0];
-    const reader = new FileReader();
-    reader.onload = function (e) {
-      profileImage.src = e.target.result;
-    };
-    reader.readAsDataURL(file);
-  });
-
-  // Make email clickable
-  email.addEventListener('click', function () {
+  // Add click event listeners to icons
+  emailIcon.addEventListener('click', function () {
     window.location.href = 'mailto:' + userProfileData.email;
   });
 
-  // Make phone clickable
-  phone.addEventListener('click', function () {
+  phoneIcon.addEventListener('click', function () {
     window.location.href = 'tel:' + userProfileData.phone;
   });
+
+  githubIcon.addEventListener('click', function () {
+    window.open(userProfileData.github, '_blank');
+  });
+
+  linkedinIcon.addEventListener('click', function () {
+    window.open(userProfileData.linkedin, '_blank');
+  });
+
+  // Initialize profile data display
+  updateProfileData();
+
 
    // Get all the add buttons
    const addButtons = document.querySelectorAll('.add-button');
