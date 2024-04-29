@@ -89,57 +89,58 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initialize profile data display
   updateProfileData();
 
+// Get all the add buttons
+const addButtons = document.querySelectorAll('.add-button');
 
-   // Get all the add buttons
-   const addButtons = document.querySelectorAll('.add-button');
+// Add event listener to each add button
+addButtons.forEach(button => {
+  button.addEventListener('click', function(event) {
+    // Prevent the default action of the anchor element
+    event.preventDefault();
+    // Find the parent element of the button
+    const parent = button.parentElement;
+    // Find the sibling element with class 'text-field'
+    const textField = parent.nextElementSibling;
 
-   // Add event listener to each add button
-   addButtons.forEach(button => {
-     button.addEventListener('click', function() {
-       // Find the parent element of the button
-       const parent = button.parentElement;
-       // Find the sibling element with class 'text-field'
-       const textField = parent.nextElementSibling;
-       
-       // Check if the text field is hidden
-       if (textField.classList.contains('hidden')) {
-         // Show the text field
-         textField.classList.remove('hidden');
-       } else {
-         // Hide the text field
-         textField.classList.add('hidden');
-       }
-     });
-   });
- 
-   // Get all the save buttons
-   const saveButtons = document.querySelectorAll('.save-button');
- 
-   // Add event listener to each save button
-   saveButtons.forEach(button => {
-     button.addEventListener('click', function() {
-       // Find the parent element of the button
-       const parent = button.parentElement;
-       // Find the textarea element within the parent
-       const textarea = parent.querySelector('textarea');
-       // Get the value of the textarea
-       const text = textarea.value;
-       // Split the text into lines
-       const lines = text.split('\n');
-       // Create a new paragraph element for each line
-       lines.forEach(line => {
-         if (line.trim() !== '') { // Skip empty lines
-           const newPara = document.createElement('p');
-           newPara.textContent = line;
-           // Insert the new paragraph before the text field
-           parent.parentElement.insertBefore(newPara, parent);
-         }
-       });
-       // Hide the text field
-       parent.classList.add('hidden');
-       // Clear the textarea value
-       textarea.value = '';
-     });
-   });
-   
+    // Check if the text field is hidden
+    if (textField.classList.contains('hidden')) {
+      // Show the text field
+      textField.classList.remove('hidden');
+    } else {
+      // Hide the text field
+      textField.classList.add('hidden');
+    }
+  });
+});
+
+// Get all the save buttons
+const saveButtons = document.querySelectorAll('.save-button');
+
+// Add event listener to each save button
+saveButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    // Find the parent element of the button
+    const parent = button.parentElement;
+    // Find the textarea element within the parent
+    const textarea = parent.querySelector('textarea');
+    // Get the value of the textarea
+    const text = textarea.value;
+    // Split the text into lines
+    const lines = text.split('\n');
+    // Create a new paragraph element for each line
+    lines.forEach(line => {
+      if (line.trim() !== '') { // Skip empty lines
+        const newPara = document.createElement('p');
+        newPara.textContent = line;
+        // Insert the new paragraph before the text field
+        parent.parentElement.insertBefore(newPara, parent);
+      }
+    });
+    // Hide the text field
+    parent.classList.add('hidden');
+    // Clear the textarea value
+    textarea.value = '';
+  });
+});
+
 });
