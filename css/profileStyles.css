@@ -154,6 +154,59 @@ h5 {
   color: rgba(40, 92, 137, 0.8);
 }
 
+.addcontainer {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.container h5 {
+  margin-bottom: 10px;
+}
+
+.styled-textarea {
+  width: calc(100% - 20px); /* Adjust for padding */
+  height: 100px; /* Adjust height as needed */
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical; /* Allow vertical resizing */
+  margin-bottom: 10px;
+}
+
+.save-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styles for headings and icons */
+h5 img {
+  margin-right: 10px;
+}
+
+.add-button img {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+
 /* Style for footer */
 footer {
   background-color: #545454;
