@@ -4,7 +4,7 @@
 
 
 
-| Student name | 
+
 | --------------- |
 | Dalia Alasmari   |
 | Mashael Zarea     | 
