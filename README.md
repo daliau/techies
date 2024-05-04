@@ -18,16 +18,16 @@
 # Installation
 To get started with Techies locally:
 
-1- Clone this repository.
-2- Install dependencies with npm install.
-3- Run the development server with npm start.
+1. Clone this repository.
+2. Install dependencies with `npm install`
+3. Run the development server with `npm start`
 
 
 # Technologies Used
-## Frontend:
+### Frontend:
 - HTML/CSS
 - Bootsrap
-## Backend:
+### Backend:
 Node.js
 MongoDB
 
