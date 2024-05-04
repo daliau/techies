@@ -24,12 +24,19 @@ To get started with Techies locally:
 
 
 # Technologies Used
+- ### Frontend
+  - HTML/CSS
+  - Bootsrap
+- ### Backend:
+  - Node.js
+  - MongoDB
+
 ### Frontend:
 - HTML/CSS
 - Bootsrap
 ### Backend:
-Node.js
-MongoDB
+- Node.js
+- MongoDB
 
 
 # Screenshots
