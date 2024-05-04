@@ -31,13 +31,6 @@ To get started with Techies locally:
   - Node.js
   - MongoDB
 
-### Frontend:
-- HTML/CSS
-- Bootsrap
-### Backend:
-- Node.js
-- MongoDB
-
 
 # Screenshots
 [Include screenshots of the website here]
