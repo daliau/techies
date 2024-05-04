@@ -44,7 +44,8 @@ To get started with Techies locally:
 
 
 # Resources
-https://www.w3schools.com/
+[w3schools](https://www.w3schools.com/).
+
 
 
 # Team Members
