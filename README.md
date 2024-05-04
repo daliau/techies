@@ -5,7 +5,6 @@
 
 
 
-| --------------- |
 | Dalia Alasmari   |
 | Mashael Zarea     | 
 | Sarab Almuqati     |
