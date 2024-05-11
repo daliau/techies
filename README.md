@@ -11,7 +11,7 @@
 - Rating System: Build trust with our rating system, ensuring quality interactions.
 
 # Flowchart
-[Include Flowchar here]
+![Flowchart](img/flowchart.png)
 
 
 
