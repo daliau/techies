@@ -1,0 +1,15 @@
+{
+  "name": "techies-main",
+  "version": "1.0.0",
+  "description": "connect businesses with skilled freelancers in the technology sector.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "techies"
+  ],
+  "author": "dev",
+  "license": "ISC"
+}
