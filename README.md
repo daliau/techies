@@ -6,9 +6,8 @@
 
 # Features
 - User-Friendly Interface: Easily navigate through projects and profiles with our intuitive design.
-- Robust Authentication: Secure your account with JWT-based authentication.
-- Seamless Communication: Communicate with ease through our messaging system.
-- Rating System: Build trust with our rating system, ensuring quality interactions.
+- Freelancer Profiles: Freelancers can create profiles with basic information including skills, experience, and portfolio samples.
+- Quality Opportunities: efficiently connects freelancers with projects that precisely match their skills and expertise, enabling businesses to swiftly identify the talent they require.
 
 # Flowchart
 ![Flowchart](img/Flowchart.png)
