@@ -11,5 +11,9 @@
     "techies"
   ],
   "author": "dev",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0"
+  }
 }

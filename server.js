@@ -1,52 +1,31 @@
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
+const express = require('express');
+const mongoose = require('mongoose');
+const Profile = require('./models/Profile'); // Import the Profile model
 
-const hostname = '127.0.0.1';
+const app = express();
 const port = 3000;
 
-const server = http.createServer((req, res) => {
-  let filePath = '.' + req.url;
-  if (filePath === './') {
-    filePath = './index.html'; // Default to serving index.html
-  }
+// Connect to MongoDB
+mongoose.connect('mongodb://localhost:27017/profiles', { useNewUrlParser: true, useUnifiedTopology: true });
 
-  const extname = path.extname(filePath);
-  let contentType = 'text/html';
+// Middleware to parse JSON requests
+app.use(express.json());
 
-  switch (extname) {
-    case '.js':
-      contentType = 'text/javascript';
-      break;
-    case '.css':
-      contentType = 'text/css';
-      break;
-    case '.html':
-      contentType = 'text/html';
-      break;
-    default:
-      contentType = 'text/plain';
-  }
-
-  fs.readFile(filePath, (err, content) => {
-    if (err) {
-      if (err.code === 'ENOENT') {
-        // File not found
-        res.writeHead(404, { 'Content-Type': 'text/html' });
-        res.end('<h1>404 Not Found</h1>');
-      } else {
-        // Server error
-        res.writeHead(500);
-        res.end(`Server Error: ${err.code}`);
-      }
-    } else {
-      // Successful response
-      res.writeHead(200, { 'Content-Type': contentType });
-      res.end(content, 'utf-8');
+// Profile search route
+app.get('/search', async (req, res) => {
+    try {
+        const searchTerm = req.query.q;
+        const profiles = await Profile.find({ $text: { $search: searchTerm } });
+        res.json(profiles);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: 'Server error' });
     }
-  });
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+// Serve static files (HTML, CSS, JavaScript)
+app.use(express.static('public'));
+
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}/`);
 });
