@@ -10,7 +10,7 @@
 - Quality Opportunities: efficiently connects freelancers with projects that precisely match their skills and expertise, enabling businesses to swiftly identify the talent they require.
 
 # Flowchart
-![Flowchart](img/Flowchart.png)
+![Flowchart](public/img/Flowchart.png)
 
 
 
