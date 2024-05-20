@@ -1,13 +1,14 @@
 const mongoose = require('mongoose');
 
-// Define schema for profiles
 const profileSchema = new mongoose.Schema({
-    name: String,
-    field: String,
-    // Add other profile fields as needed
+  name: { type: String, required: true },
+  field: { type: String, required: true }
 });
 
-// Create model for profiles using the schema
-const Profile = mongoose.model('Profile', profileSchema);
+// Create a text index on the 'name' and 'field' fields
+profileSchema.index({ name: 'text', field: 'text' });
+
+const Profile = mongoose.model('Profile', profileSchema, 'user_profiles'); // Ensure the collection name is 'user_profiles'
 
 module.exports = Profile;
+
