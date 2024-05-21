@@ -38,7 +38,11 @@ To get started with Techies locally:
 ![Screenshots](public/img/1.png)
 
 
+
+
 ![Screenshots](public/img/2.png)
+
+
 
 
 ![Screenshots](public/img/3.png)
@@ -47,13 +51,19 @@ To get started with Techies locally:
 ![Screenshots](public/img/4.png)
 
 
+
+
 ![Screenshots](public/img/5.png)
+
+
 
 
 ![Screenshots](public/img/6.png)
 
 - ### Login/SignUp Page
 ![Screenshots](public/img/7.png)
+
+
 
 
 ![Screenshots](public/img/8.png)
