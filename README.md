@@ -24,15 +24,24 @@ To get started with Techies locally:
 
 # Technologies Used
 - ### Frontend
-  - HTML/CSS
+  - HTML/CSS/JavaScript
   - Bootsrap
 - ### Backend:
   - Node.js
   - MongoDB
+  - Express 
+  - REST API
 
 
 # Screenshots
-[Include screenshots of the website here]
+![Screenshots](public/img/1.png)
+![Screenshots](public/img/2.png)
+![Screenshots](public/img/3.png)
+![Screenshots](public/img/4.png)
+![Screenshots](public/img/5.png)
+![Screenshots](public/img/6.png)
+![Screenshots](public/img/7.png)
+![Screenshots](public/img/8.png)
 
 
 # Future Work

@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', function () {
   // Mock user profile data (replace with your actual data)
   let userProfileData = {
     profileImageURL: 'img/profilePic.png',
-    name: 'Dalia',
+    name: 'Dalia  Alasmari',
     major: 'Computer Science',
-    email: 'alasmaridalia@gmail.com',
-    phone: '+966 59 2070 816',
+    email: 'ddd@gmail.com',
+    phone: '+000 00 0000 000',
     github: 'https://github.com/',
     linkedin: 'https://linkedin.com/'
   };
