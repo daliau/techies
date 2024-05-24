@@ -70,8 +70,8 @@ To get started with Techies locally:
 
 
 # About the project
-[Presentation](https://www.canva.com/design/DAGF4VAx4_I/R7hSxElIQQgEhWOqjQnG2Q/view?utm_content=DAGF4VAx4_I&utm_campaign=designshare&utm_medium=link&utm_source=editor).
-[Demo](https://drive.google.com/file/d/1gB7Fpi66JrQNOyTgo0uJZKjw4-ctJeYc/view?usp=sharing).
+- [Presentation](https://www.canva.com/design/DAGF4VAx4_I/R7hSxElIQQgEhWOqjQnG2Q/view?utm_content=DAGF4VAx4_I&utm_campaign=designshare&utm_medium=link&utm_source=editor).
+- [Demo](https://drive.google.com/file/d/1gB7Fpi66JrQNOyTgo0uJZKjw4-ctJeYc/view?usp=sharing).
 
 
 # Future Work
