@@ -1,4 +1,4 @@
-# Techies - Section 371
+# Techies
 ### Techies is a platform designed to connect businesses with skilled freelancers in the technology sector. Whether you're a business looking for expert developers, designers, or data analysts, or a freelancer seeking exciting projects, Techies has you covered.
 
  
