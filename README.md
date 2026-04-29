@@ -87,6 +87,6 @@ To get started with Techies locally:
 
 
 # Team Members
-- Dalia Alasmri
-- Sarab Almuqati
-- Mashael Zarea
+- [Dalia Alasmri](https://www.linkedin.com/in/dalia-alasmari/)
+- [Sarab Almuqati](https://www.linkedin.com/in/sarab-almuqati-0007a0279/)
+- [Mashael Zarea](https://www.linkedin.com/in/mashael-zarea/)
